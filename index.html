@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nexuss - Agencia creativa especializada en branding, estrategia y diseño de experiencia de marca.">
+  <title>Nexuss | Marcas que Conectan</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- FontAwesome v6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Estilos Custom -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- HEADER / NAVEGACIÓN -->
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="logo" aria-label="Ir al inicio de Nexuss">Nexuss</a>
+
+      <button class="nav-toggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="primary-navigation">
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+
+      <nav class="main-nav" id="primary-navigation">
+        <ul class="nav-list" role="list">
+          <li><a href="servicios.html" class="nav-link">Servicios</a></li>
+          <li><a href="testimonios.html" class="nav-link">Trabajos</a></li>
+          <li><a href="nosotros.html" class="nav-link">Nosotros</a></li>
+          <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+        </ul>
+        <a href="contacto.html" class="btn-cta">Trabajemos juntos <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CONTENIDO PRINCIPAL (INICIO) -->
+  <main id="main-content">
+    
+    <!-- 1. HERO BANNER -->
+    <section class="hero-home" aria-label="Hero Principal">
+      <div class="container">
+        <div class="hero-banner">
+          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1600&q=80" alt="Instalaciones de agencia creativa Nexuss" loading="eager">
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. MANIFIESTO Y MARCA -->
+    <section class="manifesto-section" aria-label="Manifiesto">
+      <div class="container manifesto-grid">
+        <h1 class="manifesto-title">Nexuss</h1>
+        <div class="manifesto-text">
+          <p>Conectamos marcas con lo que realmente importa en un mundo que necesita conexión.</p>
+          <a href="contacto.html" class="btn-link-arrow">Contáctanos <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. DESTACADO PORTAFOLIO -->
+    <section class="portfolio-slider-section">
+      <div class="container">
+        
+        <!-- Encabezado con Flechas de Navegación -->
+        <div class="portfolio-slider-header">
+          <div class="portfolio-slider-controls">
+            <button type="button" class="slider-arrow" onclick="moverSlider(-1)" aria-label="Ver proyectos anteriores">
+              <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>
+            </button>
+            <button type="button" class="slider-arrow" onclick="moverSlider(1)" aria-label="Ver siguientes proyectos">
+              <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Contenedor del Slider con las 6 imágenes -->
+        <div class="portfolio-cards-wrapper" id="portfolioSlider">
+          
+          <article class="portfolio-card-item">
+            <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=600&q=8" alt="Proyecto Aura - Identidad de marca">
+          </article>
+
+          <article class="portfolio-card-item">
+            <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=600&q=8" alt="Proyecto Branding Estratégico">
+          </article>
+
+          <article class="portfolio-card-item">
+            <img src="https://images.unsplash.com/photo-1522542550221-31fd19575a2d?auto=format&fit=crop&w=600&q=80" alt="Proyecto Rebranding Digital">
+          </article>
+
+          <article class="portfolio-card-item">
+            <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=600&q=80" alt="Proyecto Diseño Editorial">
+          </article>
+
+          <article class="portfolio-card-item">
+            <img src="https://images.unsplash.com/photo-1512486130939-2c4f79935e4f?auto=format&fit=crop&w=600&q=80" alt="Proyecto Sistema de Empaque">
+          </article>
+
+          <article class="portfolio-card-item">
+            <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?auto=format&fit=crop&w=600&q=80" alt="Proyecto Dirección Creativa">
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 4. PILARES / SERVICIOS -->
+    <section class="pillars-section" aria-label="Servicios Principales">
+      <div class="container">
+        <h2 class="pillars-title">Todo lo que una marca necesita para conectar de verdad.</h2>
+        
+        <div class="pillars-grid">
+          <article class="pillar-card">
+            <h3>Estrategia</h3>
+            <p>Definimos el propósito, posicionamiento y dirección de la marca, creando una base sólida que guía cada decisión.</p>
+          </article>
+
+          <article class="pillar-card">
+            <h3>Diseño</h3>
+            <p>Construimos una identidad que integra lo visual y lo verbal, asegurando coherencia en lo que la marca es y cómo se expresa.</p>
+          </article>
+
+          <article class="pillar-card">
+            <h3>Experiencia</h3>
+            <p>Diseñamos cómo la marca se vive en cada punto de contacto, generando conexión, coherencia y relaciones significativas.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. PROCESO (ACORDEÓN INTERACTIVO) -->
+    <section class="process-section" aria-label="Proceso de Branding">
+      <div class="container">
+        <div class="process-intro">
+          <span class="section-label">Branding</span>
+          <p>Así es nuestro Proceso de branding:</p>
+        </div>
+
+        <div class="accordion-list">
+          
+          <div class="accordion-item is-open">
+            <button class="accordion-header" aria-expanded="true">
+              <span>Conexión</span>
+              <span class="icon">&minus;</span>
+            </button>
+            <div class="accordion-content">
+              <div class="accordion-inner-grid">
+                <div class="accordion-media"></div>
+                <div class="accordion-text">
+                  <h4>Brief · Videollamada · Inicio</h4>
+                  <p>Todo comienza contigo. Nos conectamos con tu historia, tu visión y la esencia de tu marca. A través de una videollamada y un brief estratégico, entendemos a profundidad tu proyecto para construir desde lo auténtico.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span>Estrategia</span>
+              <span class="icon">&#43;</span>
+            </button>
+            <div class="accordion-content">
+              <div class="accordion-inner-grid">
+                <div class="accordion-media"></div>
+                <div class="accordion-text">
+                  <h4>Análisis · Posicionamiento · Ruta</h4>
+                  <p>Investigamos tu entorno, definimos tus valores clave y la propuesta única de valor para destacar en el mercado.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span>Identidad</span>
+              <span class="icon">&#43;</span>
+            </button>
+            <div class="accordion-content">
+              <div class="accordion-inner-grid">
+                <div class="accordion-media"></div>
+                <div class="accordion-text">
+                  <h4>Visual · Logo · Sistema</h4>
+                  <p>Damos forma visual a la estrategia mediante tipografía, paleta de colores, imagotipo y manuales de marca.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span>Expansión</span>
+              <span class="icon">&#43;</span>
+            </button>
+            <div class="accordion-content">
+              <div class="accordion-inner-grid">
+                <div class="accordion-media"></div>
+                <div class="accordion-text">
+                  <h4>Puntos de contacto · Aplicaciones</h4>
+                  <p>Llevamos la marca a medios impresos y digitales, empaques, web y redes sociales.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span>Proyección</span>
+              <span class="icon">&#43;</span>
+            </button>
+            <div class="accordion-content">
+              <div class="accordion-inner-grid">
+                <div class="accordion-media"></div>
+                <div class="accordion-text">
+                  <h4>Lanzamiento · Acompañamiento</h4>
+                  <p>Aseguramos la correcta implementación de la marca durante su salida al mercado.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. LIDERAZGO -->
+    <section class="leadership-section" aria-label="Liderazgo de Nexuss">
+      <div class="container leadership-grid">
+        <div class="leadership-image">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80" alt="Sara Duque - Fundadora de Nexuss">
+        </div>
+
+        <div class="leadership-content">
+          <div>
+            <h2 class="leadership-title">Liderado por Sara Duque</h2>
+            <div class="leadership-bio">
+              <p>Empecé Nexuss con la idea de crear marcas que realmente conecten.</p>
+              <p>Creo en el diseño como una forma de dar vida, construir identidad y transformar cómo una marca se percibe en el mundo.</p>
+              <p>Esto es solo el comienzo de lo que NEXUSS puede llegar a ser... y de lo que podemos construir juntos.</p>
+            </div>
+          </div>
+          
+          <a href="nosotros.html" class="btn-pill-fill">Sobre nosotros <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER GLOBAL -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      
+      <div class="footer-brand">
+        <div class="footer-logo">Nexuss</div>
+        <p class="sr-only">Nexuss - Agencia de Branding</p>
+      </div>
+
+      <nav class="footer-nav-primary" aria-label="Navegación del Pie de Página">
+        <ul>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="testimonios.html">Trabajos & Testimonios</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="portafolio.html">Caso AURA</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer-sublinks">
+        <div class="legal-links">
+          <ul>
+            <li><a href="#">Términos y condiciones</a></li>
+            <li><a href="#">Política de cookies</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+          </ul>
+        </div>
+        <div class="social-links">
+          <h4>Síguenos</h4>
+          <ul>
+            <li><a href="https://instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="https://youtube.com" target="_blank" rel="noopener noreferrer">Youtube</a></li>
+            <li><a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+            <li><a href="https://x.com" target="_blank" rel="noopener noreferrer">X</a></li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scripts JS -->
+  <script>
+    // JS para toggle del menú hamburguesa en mobile
+    const navToggle = document.querySelector('.nav-toggle');
+    const mainNav = document.querySelector('.main-nav');
+
+    navToggle.addEventListener('click', () => {
+      const isOpen = mainNav.classList.toggle('is-open');
+      navToggle.setAttribute('aria-expanded', isOpen);
+      const icon = navToggle.querySelector('i');
+      icon.className = isOpen ? 'fa-solid fa-xmark' : 'fa-solid fa-bars';
+    });
+
+    // Acordeón de Proceso de Branding
+    const accordionItems = document.querySelectorAll('.accordion-item');
+
+    accordionItems.forEach(item => {
+      const header = item.querySelector('.accordion-header');
+      
+      header.addEventListener('click', () => {
+        const isOpen = item.classList.contains('is-open');
+
+        accordionItems.forEach(i => {
+          i.classList.remove('is-open');
+          const h = i.querySelector('.accordion-header');
+          h.setAttribute('aria-expanded', 'false');
+          i.querySelector('.icon').innerHTML = '&#43;';
+        });
+
+        if (!isOpen) {
+          item.classList.add('is-open');
+          header.setAttribute('aria-expanded', 'true');
+          item.querySelector('.icon').innerHTML = '&minus;';
+        }
+      });
+    });
+
+    // Función para mover el Slider del Portafolio
+    function moverSlider(direccion) {
+      const slider = document.getElementById('portfolioSlider');
+      if (slider) {
+        // Desplaza el ancho visible del contenedor multiplicándolo por la dirección (-1 o 1)
+        const cantidadDesplazamiento = slider.clientWidth; 
+        slider.scrollBy({
+          left: cantidadDesplazamiento * direccion,
+          behavior: 'smooth'
+        });
+      }
+    }
+  </script>
+
+</body>
+</html>
